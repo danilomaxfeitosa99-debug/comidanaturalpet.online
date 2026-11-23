@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Calculadora gratuita de porção diária de alimentação natural para cães. Resultado em gramas e em medida de casa, sem cadastro.">
 <meta name="theme-color" content="#faf6ec">
-<meta property="og:title" content="Calculadora de Porção Diária — Pet Comilão">
+<meta property="og:title" content="Calculadora de Porção Diária">
 <meta property="og:description" content="Descubra em menos de 1 minuto quanto de comida natural o seu cão precisa por dia.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%232e4429'/%3E%3Cpath d='M25 7c0 10-6 15-13 15 0-10 6-15 13-15Z' fill='%23a8c99a'/%3E%3C/svg%3E">
@@ -15,7 +15,7 @@ body{margin:0}
 [hidden]{display:none!important}
 img{max-width:100%}
 </style>
-<title>Calculadora Pet Comilão</title>
+<title>Calculadora de Porção</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=DM+Sans:wght@400;500;700&display=swap">
 <style>
 :root{
@@ -214,8 +214,8 @@ footer.disc{margin-top:22px;padding:0 6px;font-size:12px;color:var(--ink-3);
       <svg viewBox="0 0 24 24" fill="none"><path d="M20 4c0 9-5.5 14-12 14 0-9 5.5-14 12-14Z" fill="#a8c99a"/><path d="M4 21c2-7 6-11 13-15" stroke="#faf6ec" stroke-width="1.9" stroke-linecap="round"/></svg>
     </span>
     <div>
-      <h1>Pet Comilão</h1>
-      <p>Calculadora de porção diária</p>
+      <h1>Calculadora de Porção</h1>
+      <p>Porção diária de comida natural</p>
     </div>
   </div>
 
@@ -696,7 +696,7 @@ function showResult(){
     window.scrollTo({top:0,behavior:"instant"});
   };
   $("copy").onclick=function(){
-    var t="Porção diária de "+S.nome+" — Pet Comilão\n"+
+    var t="Porção diária de "+S.nome+"\n"+
       c.gramas+" g por dia\n"+c.ref+" refeições de "+c.porRef+" g\n"+
       "Em medida de casa: "+medidaCasa(c.porRef)+" por refeição\n"+
       "("+c.kcal+" kcal/dia · "+modTxt+")";
